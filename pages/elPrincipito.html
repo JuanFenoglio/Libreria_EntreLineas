@@ -1,167 +1,162 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords"
-        content="libros, autores, bestseller, libreria, book, texto, comprar, lectura, lector, palabras, ebook, biblioteca">
-    <meta name="description"
-        content="Librería EntreLíneas S.A. es es el lugar especial para que todo lector encuentre su proximo libro, su proxima aventura. En EntreLineas podra encontrar la mas grande variedad de libros">
-    <meta name="author" content="Juan Jose FENOGLIO ZABALA">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap"
-        rel="stylesheet">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="../img/logoSimbolo.png">
-    <script src="https://kit.fontawesome.com/1ecda18398.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Librería EntreLíneas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>EntreLíneas</title>
 </head>
 
 <body>
-    <div class="grid-container">
-        <header class="grid_container-header">
-            <div class="header-superior">
-                <div>
-                    <a href="../index.html">
-                        <h1 class="titulo__pagina animate__animated animate__pulse">Librería EntreLíneas</h1>
-                    </a>
-                </div>
-                <div class="search">
-                    <input type="search" placeholder="Buscar libros por palabra clave / titulo / autor / ISBN">
-                </div>
-            </div>
-            <div class="conteiner-menu">
-                <div class="menu">
-                    <input type="checkbox" id="check-menu">
-                    <label for="check-menu" id="label-check">
-                        <i class="fa-solid fa-bars icon-menu"></i>
-                    </label>
-                    <nav>
-                        <ul>
-                            <li><a href="../index.html">CATEGORIAS</a>
-                                <ul>
-                                    <li><a href="../pages/elPoderDelAlterEgo.html">El Poder del Alter Ego</a>
+    <div class="container-fluid">
+        <header class="navbar-bg navbar-line">
+            <nav class="navbar navbar-expand-lg navbar-light navbar-bg">
+                <div class="container-fluid navbar-bg">
+                    <a class="navbar-brand" href="../index.html">EntreLíneas</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Categorías
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="../pages/elPoderDelAlterEgo.html">El Poder del
+                                            Alter Ego</a></li>
+                                    <li><a class="dropdown-item" href="../pages/elPrincipito.html">El Principito</a>
                                     </li>
-                                    <li><a href="../pages/elPrincipito.html">El Principito</a></li>
-                                    <li><a href="../pages/elMetodoDeLosHermanosWright.html">El Metodo de los
-                                            Hermanos
-                                            Wright</a></li>
-                                    <li><a href="../pages/elHombreMasRicoDeBabilonia.html">El hombre mas rico de
-                                            Babilonia</a></li>
-                                    <li><a href="../pages/seisSombrerosParaPensar.html">6 sombreros para
-                                            pensar</a></li>
+                                    <li><a class="dropdown-item" href="../pages/elMetodoDeLosHermanosWright.html">El
+                                            Metodo de los Hermanos Wright</a></li>
+                                    <li><a class="dropdown-item" href="../pages/elHombreMasRicoDeBabilonia.html">El
+                                            hombre mas rico de Babilonia</a></li>
+                                    <li><a class="dropdown-item" href="../pages/seisSombrerosParaPensar.html">6
+                                            sombreros para pensar</a></li>
                                 </ul>
                             </li>
-                            <li><a href="../index.html">LOS MAS VENDIDOS 2022</a></li>
-                            <li><a href="../index.html">PROXIMAMENTE</a></li>
-                            <li><a href="../index.html">NUEVOS LANZAMIENTOS</a></li>
-                            <li><a href="../pages/iniciarSesion.html">INICIAR SESION</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">BestSeller 2022</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Próximamente</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Novedades</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Iniciar Sesion</a></li>
                         </ul>
-                    </nav>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
                 </div>
-            </div>
+            </nav>
         </header>
-        <article class="article">
-            <div class="article__div__book">
-                <div class="div__book"><h3 class="title__book">El Principito</h3></div>
-                <div class="div__book contenedor__book"><img src="../img/elPrincipito.jpg" alt="El Principito" class="portada__book"></div>
-                <div class="div__book contenedor__book"><iframe width="560" height="315" src="https://www.youtube.com/embed/a75ZRRgYlEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video__book"></iframe></div>
-                <div class="div__book"><p>El clásico de la literatura, no solo infantil, narra la historia del Principito, el cual a través de un lenguaje aparentemente sencillo y de vivencias propias, deja enseñanzas de vida que ayudarán a la comprensión y valoración, tanto de las cosas sencillas como de las complejas.</p></div>
-                <div class="div__book">
-                    <h3 class="titulo__tabla">Detalles del Libro</h3>
-                <table class="table__inf">
-                    <tr>
-                        <th class="encabezados__tabla">Formato</th>
-                        <th class="encabezados__tabla">Dimensiones</th>
-                        <th class="encabezados__tabla">Fecha de Publicacion</th>
-                        <th class="encabezados__tabla">Editorial</th>
-                        <th class="encabezados__tabla">Pais de Publicacion</th>
-                        <th class="encabezados__tabla">Idioma</th>
-                    </tr>
-                    <tr>
-                        <td>Paperback | 109 páginas</td>
-                        <td>109 x 168 x 10mm | 113g</td>
-                        <td>11 Dec 2020</td>
-                        <td>Planeta Publishing</td>
-                        <td>United Kingdom</td>
-                        <td>Spanish</td>
-                    </tr>
-                </table>
+        <article>
+            <div>
+                <div class="title-book-section">
+                    <h3>El Principito</h3>
                 </div>
-                <div class="div__book">
-                    <h3 class="ecommerce">No pierdas tiempo! Tenes que leerlo YA!</h3>
-                    <div class="precio__contenedor"><p class="item__compra ecommerce">ARS$1.599,52</p></div>
-                    <p class="btn__ecommerce"><a href="#"class="btn__ecommerce">Comprar!</a></p>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class=" col text-center">
+                            <img src="../img/elPrincipito.jpg" class="rounded" alt="el principito">
+                        </div>
+                        <div class=" col">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/a75ZRRgYlEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video__book"></iframe>
+                        </div>
+                        <div class="col">
+                            <p>El clásico de la literatura, no solo infantil, narra la historia del Principito, el cual
+                                a través de un lenguaje aparentemente sencillo y de vivencias propias, deja enseñanzas
+                                de vida que ayudarán a la comprensión y valoración, tanto de las cosas sencillas como de
+                                las complejas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row detalle">
+                        <div class="col table-det">
+                            <h4 class="titulo__tabla">Detalles del Libro</h4>
+                            <table class="table__inf text-center">
+                                <tr class="fz-5">
+                                    <th class="encabezados__tabla">Formato</th>
+                                    <th class="encabezados__tabla">Dimensiones</th>
+                                    <th class="encabezados__tabla">Fecha de Publicacion</th>
+                                    <th class="encabezados__tabla">Editorial</th>
+                                    <th class="encabezados__tabla">Pais de Publicacion</th>
+                                    <th class="encabezados__tabla">Idioma</th>
+                                </tr>
+                                <tr class="fz-5">
+                                    <td>Paperback | 109 páginas</td>
+                                    <td>109 x 168 x 10mm | 113g</td>
+                                    <td>11 Dec 2020</td>
+                                    <td>Planeta Publishing</td>
+                                    <td>United Kingdom</td>
+                                    <td>Spanish</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col text-center">
+                            <h5 class="ecommerce">No pierdas tiempo! Tenes que leerlo YA!</h5>
+                            <h4 class="item__compra ecommerce">ARS$1.599,52</h4>
+                            <p class="btn__ecommerce"><a href="#" class="btn__ecommerce">Comprar!</a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </article>
-        <footer class="footer__desktop">
-            <div class="grid__subitem__footer">
-                <h5 class="title__footer">Navegación</h5>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="#">Los más vendidos</a></li>
-                    <li><a href="#">Próximamente</a></li>
-                    <li><a href="#">Nuevos lanzamientos</a></li>
-                    <li><a href="#">NewsLetter</a></li>
-                </ul>
-            </div>
-            <div class="grid__subitem__footer">
-                <h5 class="title__footer">Medios de Pago</h5>
-                <div class="medios__pago">
-                    <div><img src="../img/tarjetaVisa.png" alt="Tarjeta VISA" title="Tarjeta VISA"
-                            class="medioDePago__img"></div>
-                    <div><img src="../img/tarjetaMastercard.jpg" alt="Tarjeta MASTERCARD"
-                            title="Tarjeta MASTERCARD" class="medioDePago__img"></div>
-                    <div><img src="../img/tarjetaAmericanExpress.jpg" alt="Tarjeta AMERICAN EXPRESS"
-                            title="Tarjeta AMERICAN EXPRESS" class="medioDePago__img"></div>
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <h6 class="title__footer">Medios de Pago</h6>
+                        <div class="medios__pago">
+                            <div><img src="../img/tarjetaVisa.png" alt="Tarjeta VISA" title="Tarjeta VISA"
+                                    class="medioDePago__img">
+                            </div>
+                            <div><img src="../img/tarjetaMastercard.jpg" alt="Tarjeta MASTERCARD"
+                                    title="Tarjeta MASTERCARD" class="medioDePago__img"></div>
+                            <div><img src="../img/tarjetaAmericanExpress.jpg" alt="Tarjeta AMERICAN EXPRESS"
+                                    title="Tarjeta AMERICAN EXPRESS" class="medioDePago__img"></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h6 class="title__footer">Contáctanos</h5>
+                            <p class="fz-6">TELEFONO: 011 4813-6052</p>
+                            <p class="fz-6">EMAIL: info@libreriaentrelineas.com</p>
+                            <p class="fz-6">DIRECCION: Av. Santa Fe 1860, C1123 CABA </p>
+                    </div>
+                    <div class="col">
+                        <h6 class="title__footer">Síguenos</h5>
+                            <div class="redes__sociales">
+                                <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebookLogo.webp"
+                                        alt="FACEBOOK" title="FACEBOOK" class="redesSociales__img"></a>
+                                <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagramLogo.png"
+                                        alt="INSTAGRAM" title="INSTAGRAM" class="redesSociales__img"></a>
+                                <a href="https://www.tiktok.com/" target="_blank"><img src="../img/tiktokLogo.png"
+                                        alt="TIKTOK" title="TIKTOK" class="redesSociales__img"></a>
+                                <a href="https://twitter.com/" target="_blank"><img src="../img/twitterLogo.png"
+                                        alt="TWITTER" title="TWITTER" class="redesSociales__img"></a>
+                                <a href="https://www.youtube.com/" target="_blank"><img src="../img/youtubeLogo.png"
+                                        alt="YOUTUBE" title="YOUTUBE" class="redesSociales__img"></a>
+                            </div>
+                    </div>
+                    <div class="col">
+                        <p class="title__footer fz-6">COPYRIGHT LIBRERIA ENTRELINEAS</p>
+                        <p class="title__footer fz-6">TODOS LOS DERECHOS RESERVADOS</p>
+                    </div>
                 </div>
             </div>
-            <div class="grid__subitem__footer">
-                <h5 class="title__footer">Contáctanos</h5>
-                <p>TELEFONO: 011 4813-6052</p>
-                <p>EMAIL: info@libreriaentrelineas.com</p>
-                <p>DIRECCION: Av. Santa Fe 1860, C1123 CABA </p>
-            </div>
-            <div class="grid__subitem__footer">
-                <h5 class="title__footer">Síguenos</h5>
-                <ul class="redes__sociales">
-                    <li><a href="https://www.facebook.com/" target="_blank"><img src="../img/facebookLogo.webp"
-                                alt="FACEBOOK" title="FACEBOOK" class="redesSociales__img"></a></li>
-                    <li><a href="https://www.instagram.com/" target="_blank"><img src="../img/instagramLogo.png"
-                                alt="INSTAGRAM" title="INSTAGRAM" class="redesSociales__img"></a></li>
-                    <li><a href="https://www.tiktok.com/" target="_blank"><img src="../img/tiktokLogo.png" alt="TIKTOK"
-                                title="TIKTOK" class="redesSociales__img"></a></li>
-                    <li><a href="https://twitter.com/" target="_blank"><img src="../img/twitterLogo.png" alt="TWITTER"
-                                title="TWITTER" class="redesSociales__img"></a></li>
-                    <li><a href="https://www.youtube.com/" target="_blank"><img src="../img/youtubeLogo.png"
-                                alt="YOUTUBE" title="YOUTUBE" class="redesSociales__img"></a></li>
-                </ul>
-            </div>
-            <div class="grid__subitem__footer">
-                <p class="title__footer">COPYRIGHT LIBRERIA ENTRELINEAS - 2022</p>
-                <p class="title__footer">TODOS LOS DERECHOS RESERVADOS</p>
-            </div>
         </footer>
-        <div class="footer__mobile2">
-            <ul class="redes__sociales2">
-                <li><a href="https://www.facebook.com/" target="_blank"><img src="../img/facebookLogo.webp"
-                            alt="FACEBOOK" title="FACEBOOK" class="redesSociales__img"></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank"><img src="../img/instagramLogo.png"
-                            alt="INSTAGRAM" title="INSTAGRAM" class="redesSociales__img"></a></li>
-                <li><a href="https://www.tiktok.com/" target="_blank"><img src="../img/tiktokLogo.png" alt="TIKTOK"
-                            title="TIKTOK" class="redesSociales__img"></a></li>
-                <li><a href="https://twitter.com/" target="_blank"><img src="../img/twitterLogo.png" alt="TWITTER"
-                            title="TWITTER" class="redesSociales__img"></a></li>
-                <li><a href="https://www.youtube.com/" target="_blank"><img src="../img/youtubeLogo.png"
-                            alt="YOUTUBE" title="YOUTUBE" class="redesSociales__img"></a></li>
-            </ul>
-        </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
