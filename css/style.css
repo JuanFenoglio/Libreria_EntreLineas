@@ -4,20 +4,21 @@ body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
   text-decoration: none;
-  background-color: #A8DADC; }
+  background-color: #457B9D; }
 
 .title-seccion {
-  font-size: 18px;
+  font-size: 20px;
   margin: 15px;
   font-style: bold !important;
-  color: #E63946; }
+  color: #F1FAEE; }
 
 .title-book-section, .titulo__tabla {
-  color: #E63946; }
+  color: #F1FAEE; }
 
 .navbar-brand {
-  color: #E63946 !important;
-  font-weight: bold; }
+  color: #F1FAEE !important;
+  font-weight: bold;
+  font-size: 30px; }
 
 .row {
   display: flex;
@@ -29,18 +30,41 @@ body {
 
 .card-img-top {
   margin: 5px;
-  max-width: 250px;
-  max-height: 400px; }
+  max-width: 225px;
+  max-height: 375px; }
 
 .card-header {
   text-align: center;
   font-weight: bold; }
 
+.text-description, .table__inf {
+  color: #F1FAEE; }
+
+.box-information {
+  display: flexbox;
+  justify-content: center;
+  align-items: flex-end;
+  text-decoration: none;
+  background-color: #E63946;
+  border-radius: 5px; }
+
 .btn-ecommerce {
   text-decoration: none;
+  align-self: center;
+  justify-content: center;
+  color: #F1FAEE;
   text-align: center;
   display: flex;
   align-items: flex-end; }
+
+.buy {
+  text-decoration: none;
+  text-align: center;
+  color: #F1FAEE;
+  display: flex;
+  justify-content: center;
+  background-color: #E63946;
+  border-radius: 5px; }
 
 .medioDePago__img, .redesSociales__img {
   max-width: 35px;
@@ -55,7 +79,7 @@ body {
 
 footer {
   margin-top: 15px;
-  border-top: 2px solid #1D3557; }
+  border-top: 2px solid #F1FAEE; }
 
 .medios__pago, .redes__sociales {
   display: flex;
@@ -66,24 +90,23 @@ footer {
   margin-top: 10px;
   text-align: center;
   font-weight: bold;
-  color: #E63946; }
+  color: #F1FAEE; }
 
-.card, .navbar-bg {
-  background-color: #A8DADC; }
+.navbar-bg {
+  background-color: #457B9D; }
+
+.card {
+  background-color: #A8DADC;
+  color: #1D3557; }
 
 .navbar-line {
-  border-bottom: 2px solid #1D3557; }
+  border-bottom: 2px solid #F1FAEE; }
 
 .title-book-section {
   margin-top: 15px; }
 
 .detalle {
   margin-top: 15px; }
-
-.btn__ecommerce {
-  color: white;
-  background-color: #E63946;
-  border-radius: 5px; }
 
 @media screen and (max-width: 768px) {
   .video__book {

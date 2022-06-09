@@ -7,7 +7,7 @@ body{
     background-color: $fondo;
 }
 .title-seccion{
-    font-size: 18px;
+    font-size: 20px;
     margin: 15px;
     font-style: bold !important;
     color: $titulos;
@@ -18,6 +18,7 @@ body{
 .navbar-brand{
     color: $titulos !important;
     font-weight: bold;
+    font-size: 30px;
 }
 .row{
     display: flex;
@@ -36,11 +37,34 @@ body{
     text-align: center;
     font-weight: bold;
 }
+.text-description, .table__inf{
+    color: $titulos;
+}
+.box-information{
+    display: flexbox;
+    justify-content: center ;
+    align-items: flex-end;
+    text-decoration: none;
+    background-color: $comprar;
+    border-radius: 5px; 
+}
 .btn-ecommerce{
     text-decoration: none;
+    align-self: center;
+    justify-content: center;
+    color: $titulos;
     text-align: center;
     display: flex;
     align-items: flex-end;
+}
+.buy{
+    text-decoration: none;
+    text-align: center;
+    color: $titulos;
+    display: flex;
+    justify-content: center ;
+    background-color: $comprar;
+    border-radius: 5px; 
 }
 .medioDePago__img, .redesSociales__img{
     max-width: 35px;
@@ -68,8 +92,12 @@ footer{
     font-weight: bold;
     color: $titulos;
 }
-.card, .navbar-bg{
+.navbar-bg{
     background-color: $fondo;
+}
+.card{
+    background-color: $fondocard;
+    color: $text;
 }
 .navbar-line{
     border-bottom: 2px solid $linediv;
@@ -80,11 +108,8 @@ footer{
 .detalle{
     margin-top: 15px;
 }
-.btn__ecommerce{
-    color: white;
-    background-color: $titulos;
-    border-radius: 5px;
-}
+
+
 @media screen and (max-width: 768px) {
     .video__book {
       display: none;
