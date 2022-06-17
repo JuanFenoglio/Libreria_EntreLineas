@@ -1,115 +1,123 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
 @import "variables";
 body{
+    /*Estilo general del body*/
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
     text-decoration: none;
-    background-color: $fondo;
+    background-color: $linediv;
+    /*Estilo de header*/
+    .navbar-brand{
+        color: $titulos !important;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .navbar-bg{
+        background-color: $fondo;
+    }
+    .navbar-line{
+        border-bottom: 2px solid $linediv;
+    }
+    .btn{
+        background-color: $comprar;
+    }
+    /*Estilo de article*/
+    /*Index*/
+    .row{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .title-seccion{
+        font-size: 2rem;
+        margin: 2rem;
+        font-style: bold !important;
+        color: $comprar;
+    }
+    .card-img-top{
+        margin: 5px;
+        max-width: 225px;
+        max-height: 375px;
+    }
+    .card-header{
+        text-align: center;
+        font-weight: bold;
+    }
+    .box-information{
+        display: flexbox;
+        justify-content: center ;
+        align-items: flex-end;
+        text-decoration: none;
+        background-color: $comprar;
+        border-radius: 5px; 
+    }
+    .btn-ecommerce{
+        text-decoration: none;
+        align-self: center;
+        justify-content: center;
+        color: $titulos;
+        text-align: center;
+        display: flex;
+        align-items: flex-end;
+    }
+    .card{
+        background-color: $fondocard;
+        color: $text;
+    }
+    /*Oher HTML*/
+    .title-book-section, .titulo__tabla{
+        color: $comprar;
+    }
+    .text-description, .table__inf{
+        color: $fondo;
+    }
+    .rounded{
+        max-width: 240px;
+        max-height: 360px;
+    }  
+    .buy{
+        text-decoration: none;
+        text-align: center;
+        color: $titulos;
+        display: flex;
+        justify-content: center ;
+        background-color: $comprar;
+        border-radius: 5px; 
+    }   
+    .title-book-section{
+        margin-top: 15px;
+    }
+    .detalle{
+        margin-top: 15px;
+    }
+    /*Estilo de footer*/
+    footer{
+        margin-top: 15px;
+        border-top: 2px solid $linediv;
+        background-color: $fondo !important;
+        .title__footer{
+            margin-top: 10px;
+            text-align: center;
+            font-weight: bold;
+            color: $titulos;
+        }
+        .medios__pago, .redes__sociales{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .redesSociales__img{
+            max-width: 35px;
+            max-height: 35px;
+            text-decoration: none;
+            flex-direction: column;
+        }
+        .medioDePago__img{
+            max-width: 50px;
+            max-height: 50px;
+            flex-direction: column;
+        }
+    }        
 }
-.title-seccion{
-    font-size: 20px;
-    margin: 15px;
-    font-style: bold !important;
-    color: $titulos;
-}
-.title-book-section, .titulo__tabla{
-    color: $titulos;
-}
-.navbar-brand{
-    color: $titulos !important;
-    font-weight: bold;
-    font-size: 30px;
-}
-.row{
-    display: flex;
-    justify-content: space-evenly;
-}
-.rounded{
-    max-width: 240px;
-    max-height: 360px;
-}
-.card-img-top{
-    margin: 5px;
-    max-width: 225px;
-    max-height: 375px;
-}
-.card-header{
-    text-align: center;
-    font-weight: bold;
-}
-.text-description, .table__inf{
-    color: $titulos;
-}
-.box-information{
-    display: flexbox;
-    justify-content: center ;
-    align-items: flex-end;
-    text-decoration: none;
-    background-color: $comprar;
-    border-radius: 5px; 
-}
-.btn-ecommerce{
-    text-decoration: none;
-    align-self: center;
-    justify-content: center;
-    color: $titulos;
-    text-align: center;
-    display: flex;
-    align-items: flex-end;
-}
-.buy{
-    text-decoration: none;
-    text-align: center;
-    color: $titulos;
-    display: flex;
-    justify-content: center ;
-    background-color: $comprar;
-    border-radius: 5px; 
-}
-.medioDePago__img, .redesSociales__img{
-    max-width: 35px;
-    max-height: 35px;
-    text-decoration: none;
-    flex-direction: column;
-}
-.medioDePago__img{
-    max-width: 50px;
-    max-height: 50px;
-    flex-direction: column;
-}
-footer{
-    margin-top: 15px;
-    border-top: 2px solid $linediv;
-}
-.medios__pago, .redes__sociales{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.title__footer{
-    margin-top: 10px;
-    text-align: center;
-    font-weight: bold;
-    color: $titulos;
-}
-.navbar-bg{
-    background-color: $fondo;
-}
-.card{
-    background-color: $fondocard;
-    color: $text;
-}
-.navbar-line{
-    border-bottom: 2px solid $linediv;
-}
-.title-book-section{
-    margin-top: 15px;
-}
-.detalle{
-    margin-top: 15px;
-}
-
-
 @media screen and (max-width: 768px) {
     .video__book {
       display: none;

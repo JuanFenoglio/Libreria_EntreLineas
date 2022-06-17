@@ -1,112 +1,100 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap");
 /*COLORES*/
 body {
+  /*Estilo general del body*/
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
   text-decoration: none;
-  background-color: #457B9D; }
-
-.title-seccion {
-  font-size: 20px;
-  margin: 15px;
-  font-style: bold !important;
-  color: #F1FAEE; }
-
-.title-book-section, .titulo__tabla {
-  color: #F1FAEE; }
-
-.navbar-brand {
-  color: #F1FAEE !important;
-  font-weight: bold;
-  font-size: 30px; }
-
-.row {
-  display: flex;
-  justify-content: space-evenly; }
-
-.rounded {
-  max-width: 240px;
-  max-height: 360px; }
-
-.card-img-top {
-  margin: 5px;
-  max-width: 225px;
-  max-height: 375px; }
-
-.card-header {
-  text-align: center;
-  font-weight: bold; }
-
-.text-description, .table__inf {
-  color: #F1FAEE; }
-
-.box-information {
-  display: flexbox;
-  justify-content: center;
-  align-items: flex-end;
-  text-decoration: none;
-  background-color: #E63946;
-  border-radius: 5px; }
-
-.btn-ecommerce {
-  text-decoration: none;
-  align-self: center;
-  justify-content: center;
-  color: #F1FAEE;
-  text-align: center;
-  display: flex;
-  align-items: flex-end; }
-
-.buy {
-  text-decoration: none;
-  text-align: center;
-  color: #F1FAEE;
-  display: flex;
-  justify-content: center;
-  background-color: #E63946;
-  border-radius: 5px; }
-
-.medioDePago__img, .redesSociales__img {
-  max-width: 35px;
-  max-height: 35px;
-  text-decoration: none;
-  flex-direction: column; }
-
-.medioDePago__img {
-  max-width: 50px;
-  max-height: 50px;
-  flex-direction: column; }
-
-footer {
-  margin-top: 15px;
-  border-top: 2px solid #F1FAEE; }
-
-.medios__pago, .redes__sociales {
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
-
-.title__footer {
-  margin-top: 10px;
-  text-align: center;
-  font-weight: bold;
-  color: #F1FAEE; }
-
-.navbar-bg {
-  background-color: #457B9D; }
-
-.card {
-  background-color: #A8DADC;
-  color: #1D3557; }
-
-.navbar-line {
-  border-bottom: 2px solid #F1FAEE; }
-
-.title-book-section {
-  margin-top: 15px; }
-
-.detalle {
-  margin-top: 15px; }
+  background-color: #F1FAEE;
+  /*Estilo de header*/
+  /*Estilo de article*/
+  /*Index*/
+  /*Oher HTML*/
+  /*Estilo de footer*/ }
+  body .navbar-brand {
+    color: #F1FAEE !important;
+    font-weight: bold;
+    font-size: 30px; }
+  body .navbar-bg {
+    background-color: #457B9D; }
+  body .navbar-line {
+    border-bottom: 2px solid #F1FAEE; }
+  body .btn {
+    background-color: #E63946; }
+  body .row {
+    display: flex;
+    justify-content: space-evenly; }
+  body .title-seccion {
+    font-size: 2rem;
+    margin: 2rem;
+    font-style: bold !important;
+    color: #E63946; }
+  body .card-img-top {
+    margin: 5px;
+    max-width: 225px;
+    max-height: 375px; }
+  body .card-header {
+    text-align: center;
+    font-weight: bold; }
+  body .box-information {
+    display: flexbox;
+    justify-content: center;
+    align-items: flex-end;
+    text-decoration: none;
+    background-color: #E63946;
+    border-radius: 5px; }
+  body .btn-ecommerce {
+    text-decoration: none;
+    align-self: center;
+    justify-content: center;
+    color: #F1FAEE;
+    text-align: center;
+    display: flex;
+    align-items: flex-end; }
+  body .card {
+    background-color: #A8DADC;
+    color: #1D3557; }
+  body .title-book-section, body .titulo__tabla {
+    color: #E63946; }
+  body .text-description, body .table__inf {
+    color: #457B9D; }
+  body .rounded {
+    max-width: 240px;
+    max-height: 360px; }
+  body .buy {
+    text-decoration: none;
+    text-align: center;
+    color: #F1FAEE;
+    display: flex;
+    justify-content: center;
+    background-color: #E63946;
+    border-radius: 5px; }
+  body .title-book-section {
+    margin-top: 15px; }
+  body .detalle {
+    margin-top: 15px; }
+  body footer {
+    margin-top: 15px;
+    border-top: 2px solid #F1FAEE;
+    background-color: #457B9D !important; }
+    body footer .title__footer {
+      margin-top: 10px;
+      text-align: center;
+      font-weight: bold;
+      color: #F1FAEE; }
+    body footer .medios__pago, body footer .redes__sociales {
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+    body footer .redesSociales__img {
+      max-width: 35px;
+      max-height: 35px;
+      text-decoration: none;
+      flex-direction: column; }
+    body footer .medioDePago__img {
+      max-width: 50px;
+      max-height: 50px;
+      flex-direction: column; }
 
 @media screen and (max-width: 768px) {
   .video__book {
